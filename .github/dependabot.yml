@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: uikit
+    versions:
+    - 3.6.14
+    - 3.6.15
+    - 3.6.16
+    - 3.6.17
+    - 3.6.18
+    - 3.6.19
+  - dependency-name: "@vue/cli-service"
+    versions:
+    - 4.5.11
+  - dependency-name: "@vue/cli-plugin-eslint"
+    versions:
+    - 4.5.11
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
